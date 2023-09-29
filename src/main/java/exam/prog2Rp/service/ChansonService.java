@@ -26,4 +26,14 @@ public class ChansonService {
         return chansonRepository.findAll();
     }
 
+    public Chanson save(Chanson chanson) {
+        return chansonRepository.save(chanson);
+    }
+    public void deleteById(Long id) {
+        chansonRepository.deleteById(id);
+    }
+
+    public Chanson update(Chanson chanson) {
+       return chansonRepository.save(chanson);
+    }
 }
